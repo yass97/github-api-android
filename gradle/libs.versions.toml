@@ -1,0 +1,63 @@
+[versions]
+versionCode = "1"
+versionName = "1.0.0"
+compileSdk = "34"
+targetSdk = "34"
+minSdk = "24"
+jvmTarget = "1.8"
+
+application = "8.2.0-beta06"
+agp = "8.2.0-beta06"
+ksp = "1.9.0-1.0.13"
+kotlin = "1.9.0"
+
+core-ktx = "1.12.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+retrofit = "2.9.0"
+okhttp-bom = "4.12.0"
+moshi-kotlin = "1.15.0"
+hilt = "2.51"
+hilt-navigation-compose = "1.2.0"
+compose-bom = "2023.08.00"
+compose-kotlin-compiler = "1.5.1"
+coil = "2.6.0"
+lifecycle = "2.7.0"
+threetenabp = "1.4.7"
+
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version.ref = "okhttp-bom" }
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi-kotlin" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hilt-navigation-compose" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material = { group = "androidx.compose.material", name = "material" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+threetenabp = { group = "com.jakewharton.threetenabp", name = "threetenabp", version.ref = "threetenabp" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+[plugins]
+application = { id = "com.android.application", version.ref = "application" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
